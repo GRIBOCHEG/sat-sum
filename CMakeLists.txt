@@ -1,4 +1,5 @@
-﻿project(saturated_sum)				
+﻿project(sat_sum)				
 cmake_minimum_required(VERSION 2.8) 
-
-add_executable(main main.c)			
+set(SRC_LIST src/main.c)
+add_definitions(-Wall -O2)
+add_executable(${PROJECT_NAME} ${SRC_LIST})
