@@ -17,11 +17,11 @@ int main()
     uint8_t pixel1[PIXEL_LENGTH] = {0,rand(),rand(),rand()};
     uint8_t pixel2[PIXEL_LENGTH] = {0,rand(),rand(),rand()};
     printf("Initial pixels:\n");
-    log_pixel(pixel1);
-    log_pixel(pixel2);
-    pixel_sum(pixel1,pixel2);
+    log_pixel(pixel1, PIXEL_LENGTH);
+    log_pixel(pixel2, PIXEL_LENGTH);
+    pixel_sum(pixel1, pixel2, PIXEL_LENGTH);
     printf("Result:\n");
-    log_pixel(pixel1);
+    log_pixel(pixel1, PIXEL_LENGTH);
 
 #ifdef MAIN_EXECUTABLE_TEST
     time_t end = clock();
